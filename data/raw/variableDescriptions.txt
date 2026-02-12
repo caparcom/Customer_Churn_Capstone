@@ -1,105 +1,104 @@
 Geographic
-X/Y: Map coordinates long/lat
-LATCOD: Lat Coord
-LONGCOD: Loong Coord
-ObjectID: Internal GIS Identifer
+X/Y: Map coordinates long/lat (float)
+LATCOD: Lat Coord (float)
+LONCOD: Long Coord (float)
+ObjectID: Internal GIS Identifier (int)
 
 Identification
-NCESSCH - Official NCES School ID
-SURVYEAR - Year of Survey
-STABR - State Abbreviation
-LEAID - Local Education Agency (district) identifier
-ST_LEAID – State-assigned Local Education Agency ID
-LEA_NAME – Local Education Agency (district) name
-SCH_NAME – School name
+NCESSCH – Official NCES School ID (string)
+SURVYEAR – Year of Survey (string)
+STABR – State Abbreviation (string)
+LEAID – Local Education Agency (district) identifier (string)
+ST_LEAID – State-assigned Local Education Agency ID (string)
+LEA_NAME – Local Education Agency (district) name (string)
+SCH_NAME – School name (string)
 
 Address and Contact Information
-LSTREET1 – School street address (line 1)
-LSTREET2 – School street address (line 2)
-LCITY – School city
-LSTATE – School state
-LZIP – School ZIP code
-LZIP4 – School ZIP+4 code
-PHONE – School telephone number
+LSTREET1 – School street address (string)
+LSTREET2 – School street address (string)
+LCITY – School city (string)
+LSTATE – School state (string)
+LZIP – School ZIP code (string)
+LZIP4 – School ZIP+4 code (string)
+PHONE – School telephone number (string)
 
 School Characteristics
-CHARTER_TEXT – Charter school status
-VIRTUAL – Virtual school indicator
-SCHOOL_LEVEL – School level classification (Elementary/Middle/High)
-SCHOOL_TYPE_TEXT – Type of school (e.g., Regular, Special Education)
-STATUS – School operational status code
-SY_STATUS_TEXT – School operational status description
-GSLO – Lowest grade served
-GSHI – Highest grade served
-ULOCALE – Urban-centric locale code
-NMCNTY – County name
+CHARTER_TEXT – Charter school status (bool)
+VIRTUAL – Virtual school indicator (string)
+SCHOOL_LEVEL – School level classification (string)
+SCHOOL_TYPE_TEXT – Type of school (string)
+STATUS – School operational status code (string)
+SY_STATUS_TEXT – School operational status description (string)
+GSLO – Lowest grade served (int)
+GSHI – Highest grade served (int)
+ULOCALE – Urban-centric locale code (string)
+NMCNTY – County name (string)
 
-Socioeconomoic Indicators
-TOTFRL – Total students eligible for Free or Reduced-Price Lunch
-FRELCH – Students eligible for Free Lunch
-REDLCH – Students eligible for Reduced-Price Lunch
-DIRECTCERT – Students directly certified for free meals (e.g., SNAP/TANF)
+Socioeconomic Indicators
+TOTFRL – Total students eligible for Free or Reduced-Price Lunch (int)
+FRELCH – Students eligible for Free Lunch (int)
+REDLCH – Students eligible for Reduced-Price Lunch (int)
+DIRECTCERT – Students directly certified for free meals (e.g., SNAP/TANF) (int)
 
 Grade-Level Enrollment Indicators
-PK – Prekindergarten enrollment
-
-KG – Kindergarten enrollment
-
-G01 – Grade 1 enrollment
-G02 – Grade 2 enrollment
-G03 – Grade 3 enrollment
-G04 – Grade 4 enrollment
-G05 – Grade 5 enrollment
-G06 – Grade 6 enrollment
-G07 – Grade 7 enrollment
-G08 – Grade 8 enrollment
-G09 – Grade 9 enrollment
-G10 – Grade 10 enrollment
-G11 – Grade 11 enrollment
-G12 – Grade 12 enrollment
-G13 – Grade 13 enrollment
-UG – Ungraded student enrollment
-AE – Adult education enrollment
+PK – Prekindergarten enrollment (int)
+KG – Kindergarten enrollment (int)
+G01 – Grade 1 enrollment (int)
+G02 – Grade 2 enrollment (int)
+G03 – Grade 3 enrollment (int)
+G04 – Grade 4 enrollment (int)
+G05 – Grade 5 enrollment (int)
+G06 – Grade 6 enrollment (int)
+G07 – Grade 7 enrollment (int)
+G08 – Grade 8 enrollment (int)
+G09 – Grade 9 enrollment (int)
+G10 – Grade 10 enrollment (int)
+G11 – Grade 11 enrollment (int)
+G12 – Grade 12 enrollment (int)
+G13 – Grade 13 enrollment (int)
+UG – Ungraded student enrollment (int)
+AE – Adult education enrollment (int)
 
 Enrollment Totals and Staffing
-TOTMENROL – Total male student enrollment
-TOTFENROL – Total female student enrollment
-TOTAL – Total student enrollment
-MEMBER – Membership count (used for funding and accountability)
-FTE – Full-Time Equivalent teachers
-STUTERATIO – Student-to-teacher ratio
+TOTMENROL – Total male student enrollment (int)
+TOTFENROL – Total female student enrollment (int)
+TOTAL – Total student enrollment (int)
+MEMBER – Membership count (used for funding/accountability) (int)
+FTE – Full-Time Equivalent teachers (float)
+STUTERATIO – Student-to-teacher ratio (float)
 
 Student Race / Ethnicity Enrollment
 American Indian / Alaska Native
-AMALM – American Indian/Alaska Native male enrollment
-AMALF – American Indian/Alaska Native female enrollment
-AM – Total American Indian/Alaska Native enrollment
+AMALM – American Indian/Alaska Native male enrollment (int)
+AMALF – American Indian/Alaska Native female enrollment (int)
+AM – Total American Indian/Alaska Native enrollment (int)
 
 Asian
-ASALM – Asian male enrollment
-ASALF – Asian female enrollment
-AS – Total Asian enrollment
+ASALM – Asian male enrollment (int)
+ASALF – Asian female enrollment (int)
+AS – Total Asian enrollment (int)
+
 Black or African American
-BLALM – Black/African American male enrollment
-BLALF – Black/African American female enrollment
-BL – Total Black/African American enrollment
+BLALM – Black/African American male enrollment (int)
+BLALF – Black/African American female enrollment (int)
+BL – Total Black/African American enrollment (int)
 
 Native Hawaiian / Pacific Islander
-HPALM – Native Hawaiian/Pacific Islander male enrollment
-HPALF – Native Hawaiian/Pacific Islander female enrollment
-HP – Total Native Hawaiian/Pacific Islander enrollment
+HPALM – Native Hawaiian/Pacific Islander male enrollment (int)
+HPALF – Native Hawaiian/Pacific Islander female enrollment (int)
+HP – Total Native Hawaiian/Pacific Islander enrollment (int)
 
 Hispanic / Latino
-HIALM – Hispanic/Latino male enrollment
-HIALF – Hispanic/Latino female enrollment
-HI – Total Hispanic/Latino enrollment
+HIALM – Hispanic/Latino male enrollment (int)
+HIALF – Hispanic/Latino female enrollment (int)
+HI – Total Hispanic/Latino enrollment (int)
 
 Two or More Races
-TRALM – Two or more races male enrollment
-TRALF – Two or more races female enrollment
-TR – Total two or more races enrollment
+TRALM – Two or more races male enrollment (int)
+TRALF – Two or more races female enrollment (int)
+TR – Total two or more races enrollment (int)
 
 White
-WHALM – White male enrollment
-WHALF – White female enrollment
-WH – Total White enrollment
+WHALM – White male enrollment (int)
+WHALF – White female enrollment (int)
+WH – Total White enrollment (int)
